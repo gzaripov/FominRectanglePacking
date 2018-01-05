@@ -1,0 +1,27 @@
+@import 'bootstrap.css';
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #323232 !important;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.full {
+  height: 100vh;
+  width: 100vw;
+}
+
+/*noinspection CssUnknownProperty*/
+.unselectable {
+  -webkit-user-select: none; /* SAFARI, CHROME */
+  -khtml-user-select: none; /* KONQUEROR */
+  --user-select: none; /* FIREFOX */
+  -ns-user-select: none; /* IE */
+  user-select: none; /* CSS3 */
+}
