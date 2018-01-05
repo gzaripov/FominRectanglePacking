@@ -1,6 +1,6 @@
 package kt
 
-enum class Color(val color: String) {
+enum class Color(val value: String) {
     White("#fff"),
     Black("#000"),
     MaterialBlack("#222222"),

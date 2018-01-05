@@ -15,6 +15,6 @@ open class CanvasStyle(
     }
 
     companion object {
-        val Transparent = Color.Transparent.color
+        val Transparent = Color.Transparent.value
     }
 }

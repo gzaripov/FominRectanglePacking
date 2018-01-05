@@ -1,5 +1,7 @@
 package kt
 
+import kt.core.Rectangle
+import kt.elements.CanvasRectangle
 import org.w3c.dom.HTMLElement
 import kotlin.browser.document
 import kotlin.browser.window
@@ -14,6 +16,13 @@ fun main(args: Array<String>) {
     canvas.element.addClass("unselectable")
     val container = document.getElementById("canvas-container") as HTMLElement
     container.appendChild(canvas.element)
+
+    val rectStyle = CanvasStyle(Color.Black.value)
+    val rectangle = Rectangle(0.0, 0.0, w, w)
+    val canvasRectangle = CanvasRectangle(rectangle, canvas, rectStyle)
+
+    canvas.addDrawables(canvasRectangle)
+    canvas.invalidate()
 }
 
 fun getWidth(): Double {
